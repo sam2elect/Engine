@@ -3,7 +3,7 @@
 #include<iomanip>
 using namespace std;
 
-class efficiency
+class engine
 {
 public:
 	float input, output, efficiency;
@@ -26,7 +26,7 @@ public:
 
 };
 
-class InternalCombustineEngine : public efficiency
+class InternalCombustineEngine : public engine
 {
 public:
 	float eng_efficiency()
@@ -37,7 +37,7 @@ public:
 	}
 };
 
-class ExternalCombustineEngine : public efficiency
+class ExternalCombustineEngine : public engine
 {
 public:
 	float eng_efficiency()
@@ -47,7 +47,7 @@ public:
 	}
 };
 
-class PetrolEngine : public efficiency
+class PetrolEngine : public engine
 {
 public:
 	float eng_efficiency()
@@ -58,7 +58,7 @@ public:
 	}
 };
 
-class DieselEngine : public efficiency
+class DieselEngine : public engine
 {
 public :
 	float eng_efficiency()
@@ -68,7 +68,7 @@ public :
 	}
 };
 
-class SteamEngine : public efficiency
+class SteamEngine : public engine
 {
 public:
 
